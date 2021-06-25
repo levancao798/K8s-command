@@ -1,4 +1,4 @@
-##get logs pod \n
+##get logs pod <br/>
 kubectl logs pod/[pod_name] -n [namespace] --since=36h > [pod_name].log
 ##delete not-running pod
 kubectl get po --all-namespaces --field-selector 'status.phase!=Running' -o json | kubectl delete -f -
