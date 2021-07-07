@@ -1,0 +1,5 @@
+1、kubectl edit cm coredns -n kube-system
+
+2、delete ‘loop’ ,save and exit
+
+3、restart coredns pods by：kubectl delete pod coredns.... -n kube-system
