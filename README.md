@@ -14,3 +14,8 @@ kubectl get pods -n pinggo-dev| grep Evicted | awk '{print $1}' |xargs kubectl d
 ```bash
 for kind in `kubectl api-resources | tail +2 | awk '{ print $1 }'`; do kubectl explain $kind; done | grep -e "KIND:" -e "VERSION:"
 ```
+
+<br/>container creating err<br/>
+```bash
+vim /run/flannel/subnet.env
+```
